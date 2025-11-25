@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color & Mood | Design 101</title>
+
+    <!-- DEVELOPER: Ashley Singh, IS117-001, Fall 2025 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<header class="fixed-top">
+    <!-- Top Bar: Logo + Search -->
+    <nav class="navbar navbar-dark bg-dark py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Your Logo</a>
+            <form class="d-none d-md-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search">
+            </form>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSearch">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="collapse bg-dark p-2" id="mobileSearch">
+        <form role="search">
+            <input class="form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+    <!-- Bottom Bar: Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav2">
+                <ul class="navbar-nav ms-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Guides</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="process.html">Design Process</a></li>
+                            <li><a class="dropdown-item" href="elements.html">Design Elements</a></li>
+                            <li><a class="dropdown-item active" href="colorandmood.html">Color & Mood</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-grow-1 container my-5">
+
+    <main class="flex-grow-1 container my-5">
+        <h1 class="mb-4">Color & Mood</h1>
+
+        <p>Colors have a powerful effect on mood and perception in design. Each color can evoke emotions, influence behavior, and set the tone of your work. Understanding what colors represent can help you communicate your message effectively.</p>
+
+        <h3 class="mt-4">Color Meanings</h3>
+        <ul class="list-unstyled">
+            <li><span style="color:#ff0000; font-weight:bold;">Red:</span> anger, hostility, lust, passion, urgency</li>
+            <li><span style="color:#ff7f00; font-weight:bold;">Orange:</span> energy, creativity, warmth, enthusiasm</li>
+            <li><span style="color:#ffff00; font-weight:bold;">Yellow:</span> happiness, optimism, caution, attention</li>
+            <li><span style="color:#008000; font-weight:bold;">Green:</span> growth, harmony, safety, nature, calm</li>
+            <li><span style="color:#0077ff; font-weight:bold;">Blue:</span> trust, serenity, stability, professionalism</li>
+            <li><span style="color:#800080; font-weight:bold;">Purple:</span> luxury, mystery, imagination, spirituality</li>
+            <li><span style="color:#ff69b4; font-weight:bold;">Pink:</span> love, femininity, softness, playfulness</li>
+            <li><span style="color:#ffffff; font-weight:bold; text-shadow: 1px 1px 2px #000;">White:</span> purity, cleanliness, simplicity, peace</li>
+            <li><span style="color:#000000; font-weight:bold; text-shadow: 1px 1px 2px #fff;">Black:</span> sophistication, power, elegance, mystery</li>
+            <li><span style="color:#808080; font-weight:bold;">Gray:</span> neutrality, balance, calm, professionalism</li>
+            <li><span style="color:#8b4513; font-weight:bold;">Brown:</span> reliability, stability, earthiness, warmth</li>
+        </ul>
+
+        <h3 class="mt-4">Using Colors in Design</h3>
+        <p>Combining colors thoughtfully can influence perception. Complementary, analogous, and triadic color schemes create harmony and visual interest, while contrasting colors can draw attention to important elements.</p>
+    </main>
+
+</main>
+
+<footer class="bg-dark text-light text-center py-3 mt-auto">
+    &copy; Ashley Singh 2025 |
+    <a href="#" class="footer-link">Terms of Service</a> |
+    <a href="#" class="footer-link">Privacy</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
