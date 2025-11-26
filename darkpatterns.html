@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Patterns | Design 101</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- DEVELOPER: Ashley Singh, IS117-001, Fall 2025 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- HEADER -->
+<header class="fixed-top">
+    <nav class="navbar navbar-dark bg-dark py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="40" height="40" alt="Design 101 Logo">
+            </a>
+            <form class="d-none d-md-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search">
+            </form>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSearch">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="collapse bg-dark p-2" id="mobileSearch">
+        <form role="search">
+            <input class="form-control" type="search" placeholder="Search">
+        </form>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav2">
+                <ul class="navbar-nav ms-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Guides</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="process.html">Design Process</a></li>
+                            <li><a class="dropdown-item" href="elements.html">Design Elements</a></li>
+                            <li><a class="dropdown-item" href="colorandmood.html">Color & Mood</a></li>
+                            <li><a class="dropdown-item" href="darkpatterns.html">Dark Patterns</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<main class="flex-grow-1 container my-5">
+    <h1 class="mb-4">Dark Patterns in Design</h1>
+
+    <div class="row align-items-start">
+        <!-- Text -->
+        <div class="col-md-6">
+            <p>Dark patterns are user interface designs that trick or manipulate users into taking actions they might not otherwise take. These deceptive techniques exploit cognitive biases and manipulate decision-making, often prioritizing the company’s goals over user interests.</p>
+
+            <p>Common examples include hidden fees, misleading wording, forced continuity, and disguised ads. They erode trust and can lead to frustration, poor user experience, or unintentional commitments, such as signing up for subscriptions or sharing personal information.</p>
+
+            <p>Understanding dark patterns is crucial for designers who want to create ethical, user-friendly experiences. Awareness allows designers to avoid unintentionally using manipulative tactics and instead focus on transparency, clarity, and user autonomy.</p>
+
+            <p>Designers can combat dark patterns by following principles of honest design: making actions clear, providing easy ways to opt out, and ensuring that users have complete understanding and control over their decisions. Ethical design strengthens trust and promotes long-term user satisfaction.</p>
+        </div>
+
+        <!-- Image -->
+        <div class="col-md-6 text-center">
+            <img src="images/darkpatternschart.jpeg" alt="Dark Patterns Illustration" class="img-fluid rounded shadow-sm">
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light text-center py-3">
+    &copy; Ashley Singh 2025 |
+    <a href="#" class="footer-link">Terms of Service</a> |
+    <a href="#" class="footer-link">Privacy</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
