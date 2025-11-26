@@ -1,21 +1,49 @@
-
 /* DEVELOPER: Ashley Singh, IS117-001, Fall 2025 */
 
-/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-color: #1e1e1e;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    padding-top: 130px; /* spacing below fixed header */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 130px; 
 }
 
-h1,h2,h3,h4,h5,h6 { color:#fff; }
+main.flex-grow-1 {
+    flex: 1 0 auto;
+}
 
-/* Header Tweaks */
-.navbar-dark.bg-dark { background-color: #111 !important; }
-.navbar-dark.bg-secondary { background-color: #222 !important; }
-.navbar-nav .nav-link { margin-right: 20px; }
-.navbar-nav .dropdown-menu { margin-left: 0; }
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
+.navbar-dark.bg-dark {
+    background-color: #111 !important;
+}
+.navbar-dark.bg-secondary {
+    background-color: #222 !important;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+}
+
+.navbar-nav .dropdown-menu {
+    margin-left: 0;
+}
+
+.navbar-brand img {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+}
 
 /* Jumbotron */
 .jumbotron-custom {
@@ -25,26 +53,28 @@ h1,h2,h3,h4,h5,h6 { color:#fff; }
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0.5rem;
-    height: 400px; /* adjust as needed */
+    height: 400px; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .jumbotron-custom::before {
     content: "";
     position: absolute;
-    top:0; left:0; right:0; bottom:0;
+    inset: 0;
     background-color: rgba(0,0,0,0.4);
     border-radius: 0.5rem;
-    z-index:0;
+    z-index: 0;
 }
 
 .jumbotron-text {
     position: relative;
-    z-index:1;
+    z-index: 1;
     color: #ffffff;
+    padding: 0 1rem;
 }
 
 /* Cards */
@@ -55,44 +85,56 @@ h1,h2,h3,h4,h5,h6 { color:#fff; }
     transition: transform 0.2s ease;
 }
 
-.card:hover { transform: translateY(-4px); }
+.card:hover {
+    transform: translateY(-4px);
+}
 
 .card-img-top {
     height: 200px;
     object-fit: cover;
 }
 
-/* Footer */
-footer { background-color: #111 !important; color: #fff; }
-.footer-link { color: #c7d7ff; text-decoration:none; }
-.footer-link:hover { color:#fff; text-decoration: underline; }
+/* Footer (sticky) */
+footer {
+    background-color: #111 !important;
+    color: #fff;
+    width: 100%;
+    flex-shrink: 0;
+}
 
-/* ===== Contact Form ===== */
-form input, form button {
+.footer-link {
+    color: #c7d7ff;
+    text-decoration: none;
+}
+.footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 0px) {
+}
+
+
+form input, form button, form textarea {
     width: 100%;
 }
+
 
 form button {
     margin-top: 1rem;
 }
 
-/* ===== Footer sticky for short pages ===== */
-body.d-flex.flex-column.min-vh-100 main.flex-grow-1 {
-    flex: 1;
-}
-
 .btn-purple {
-    background-color: #7b5cff;  /* purple */
-    color: #ffffff;              /* white text */
-    border: none;                /* optional: remove border */
+    background-color: #7b5cff;
+    color: #ffffff;
+    border: none;
 }
-
 .btn-purple:hover {
-    background-color: #5a3dcc;  /* darker purple on hover */
+    background-color: #5a3dcc;
 }
 
 
-/* Optional: spacing tweak for smaller screens */
 @media (max-width: 768px) {
     main.container.my-5 {
         margin-top: 2rem;
@@ -100,3 +142,9 @@ body.d-flex.flex-column.min-vh-100 main.flex-grow-1 {
     }
 }
 
+
+@media (max-width: 480px) {
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+}
